@@ -74,10 +74,10 @@ for x = 1:size(centers, 1)
     end
 end
 
-cleaned_centers = zeros((size(cleaned_centers_Y, 1)), size(cleaned_centers_Y, 2));
+cleaned_centers = zeros(size(cleaned_centers_Y, 1)), size(cleaned_centers_Y, 2)));
 
-for y = 1:size(cleaned_centers_Y, 2)
-    for x = 1:size(cleaned_centers_Y, 1)
+for y = 1:szdim(cleaned_centers_Y(2))
+    for x = 1:szdim(cleaned_centers_Y(1))
         if (cleaned_centers_Y(x,y) == 1)
             cleaned_centers(x,y) = 1;
             break;
